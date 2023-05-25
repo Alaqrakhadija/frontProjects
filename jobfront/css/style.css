@@ -1,0 +1,103 @@
+.container{
+display:flex;
+margin:0;
+padding:0;
+height:100%;
+align-items: stretch;
+}
+
+.side{
+flex:20%;
+background-color:rgb(0,0,0, 0.7);
+}
+#title{
+color:white;
+padding-left:40px;
+font-size:4vw;
+}
+.side ul{
+margin-top:50%;
+list-style-type: none;
+}
+.side li a {
+display:block;
+margin:15px;
+text-decoration:None;
+color:white;
+font-size:1.5vw;
+}
+.main{
+flex:80%;
+background-color:rgb(0,0,0, 0.1);
+padding-top:30px;
+
+}
+.company-container{
+display:flex;
+background-color:white;
+border:solid white;
+border-radius:5px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+max-width:50%;
+margin:10px 0px 10px 50px;
+}
+.info{
+border-right: 1px solid rgba(0, 0, 0,0.3);
+}
+.info h3{
+margin-left:5px;
+}
+.info p{
+margin-left:10px;
+}
+#more {
+color:rgb(0,0,0,0.5);
+font-size:13px;
+cursor:pointer;
+text-decoration:None;
+}
+#more:hover{
+color:rgb(0,0,250,0.5);
+}
+.contact{
+
+margin:50px 0 0 12px;
+color:rgba(0, 0, 0, 0.7);
+}
+.contact span{
+
+width:100%;
+display:inline-block;
+padding:2px 0px;
+margin:0;
+
+}
+@media screen and (max-width: 768px) {
+  .company-container {
+    flex-direction: column; /* Change to a vertical layout */
+  }
+
+  .contact {
+    margin-top: 10px; /* Adjust the spacing */
+  }
+  .info{
+  border-right:none;
+border-bottom: 1px solid rgba(0, 0, 0,0.3);
+}
+}
+
+/*---------------------------------- company style----------------------------*/
+.company, .position{
+margin:80px;
+}
+.company-positions form{
+display:inline-block;
+}
+.positions-container a, .position a{
+cursor:pointer;
+color:rgb(0,0,0,0.7);
+text-decoration:None;
+}
+.positions-container a:hover,.position a:hover{
+color:rgb(0,0,250,0.5);
+}

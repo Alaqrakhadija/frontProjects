@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Company</title>
+</head>
+<body style="margin:0;padding:0;" onload="loadCompanyData()">
+<div class="container" >
+
+    <div class="side">
+        <h1 id="title">JobPlace</h1>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="company-list.html">Companies</a></li>
+            <li><a href="#CL">Cover Letter</a></li>
+            <li><a onclick="logOut()" style="cursor:pointer;">Logout</a></li>
+        </ul>
+    </div>
+    <div class="main">
+
+     <div class="info">
+         <div class="company">
+             <div class="company-about">
+
+             </div>
+
+
+         <div class="company-positions">
+             <h2 >Positions:</h2>
+             <form onsubmit="filterPositions(true,event)">
+                 <input type="text" placeholder="Search By Title" id="search" required >
+                 <input type="submit" value="Search">
+             </form>
+             <form>
+                 <label for="filter">final Apply Date</label>
+                   <select name="cars" id="filter" onchange="filterPositions(false,event)">
+    <option value="all">all</option>
+    <option value="available">available</option>
+  </select>
+             </form>
+             <ul class="positions-container">
+
+             </ul>
+
+
+         </div>
+         </div>
+
+         </div>
+
+     </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script  src="js/company.js"></script>
+</body>
+</html>

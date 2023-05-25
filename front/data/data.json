@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Al Aqsa",
+    "country": "Jerusalem",
+    "description": "Capital of palestine",
+    "img": "alaqsa.jpg"
+  },
+{
+    "id": 2,
+    "name": "Khalifa tower",
+    "country": "UAE",
+    "description": "highest tower in the world",
+    "img": "uae.jpg"
+  },{
+  "id": 3,
+    "name": "Taj Mahal",
+    "country": "India",
+    "description": "The world's most famous testimony to the power of love",
+    "img": "india.jpg"
+  },
+  {
+    "id": 4,
+    "name": "The Colosseum",
+    "country": "Rome",
+    "description": "The largest structure left to us by Roman antiquity",
+    "img": "rome.jpg"
+  },  {
+  "id": 5,
+    "name": "Machu Picchu, Peru",
+    "country": "South America",
+    "description": "The most impressive ruined city in the world",
+    "img": "america.jpg"
+  }
+]
